@@ -1,3 +1,16 @@
 page-home {
 
+	.cover-img {
+		width: 100%;
+		margin-bottom: 5rem;
+	}
+
+	.c-button {
+		font-size: 130%;
+		color: color($colors, light);
+
+		ion-icon {
+			font-size: 100px;
+		}
+	}
 }
