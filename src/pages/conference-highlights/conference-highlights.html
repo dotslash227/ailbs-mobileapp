@@ -1,0 +1,50 @@
+<!--
+  Generated template for the ConferenceHighlightsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{title}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card *ngFor="let h of highlights">
+
+    <ion-card-content class="card">
+      {{h}}
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+
+    <img src="./assets/imgs/map.png">
+
+    <ion-item>
+      <ion-icon name="pin" item-start large></ion-icon>
+      <h2>Fortis Hospital</h2>
+      <p>Sector - 62, Gautum Budh Nagar, Noida, Uttar Pradesh, - 201301</p>
+    </ion-item>
+
+    <ion-item>
+      <span item-start>18 min</span>
+      <span item-start>(2.6 mi)</span>
+      <button ion-button icon-start clear item-end>
+        <ion-icon name="navigate"></ion-icon>
+        Start
+      </button>
+    </ion-item>
+
+  </ion-card>
+
+</ion-content>

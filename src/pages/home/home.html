@@ -1,45 +1,24 @@
 <ion-header>
   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>
-      <ion-icon name="md-home" style="margin-right:2rem"></ion-icon>
       Home
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content no-padding>
-  
+
   <div class="cover-img">
     <img src="./assets/imgs/conference.jpg">
   </div>
 
-  <ion-grid>
-    <ion-row align-items-stretch justify-content-center>
-      <ion-col text-center *ngFor="let item of menuItemsCopy">
-        <div class="c-button" (click)="openPage(item)">
-          <div>
-            <ion-icon [name]="item.icon"></ion-icon>
-          </div>
-          <div>
-            <label>{{item.label}}</label>
-          </div>
-        </div>
-      </ion-col>
-    </ion-row>
-    <ion-row align-items-stretch justify-content-center style="margin-top: 3rem;">
-      <ion-col text-center *ngFor="let item of menuItems">
-        <div class="c-button" (click)="openPage(item)">
-            <div>
-              <ion-icon [name]="item.icon"></ion-icon>
-            </div>
-            <div>
-              <label>{{item.label}}</label>
-            </div>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-  
-  <button ion-button color="primary" large block class="sticky-sponsors">Sponsors</button>
 
 </ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Sponsors</ion-title>
+  </ion-toolbar>
+</ion-footer>
