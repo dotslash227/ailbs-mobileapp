@@ -20,4 +20,10 @@ page-home {
 		flex-direction: column;
 		justify-content: space-between;
 	}
+
+	.sticky-sponsors {
+		position: fixed;
+		bottom: 0;
+		margin-bottom: 0;
+	}
 }

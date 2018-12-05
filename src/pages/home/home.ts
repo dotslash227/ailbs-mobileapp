@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { ListPage } from '../list/list';
 
 @Component({
   selector: 'page-home',
@@ -11,27 +12,27 @@ export class HomePage {
     {
       icon: 'archive',
       label: 'Agenda',
-      page: 'ListPage'
+      page: ListPage
     },
     {
       icon: 'md-barcode',
       label: 'Conference Highlights',
-      page: 'ListPage'
+      page: ListPage
     },
     {
       icon: 'microphone',
       label: 'Speaker',
-      page: 'ListPage'
+      page: ListPage
     },
     {
       icon: 'people',
       label: 'Faculties',
-      page: 'ListPage'
+      page: ListPage
     },
     {
       icon: 'paper',
       label: 'Paper',
-      page: 'ListPage'
+      page: ListPage
     },
     {
       icon: 'log-in',
@@ -46,8 +47,8 @@ export class HomePage {
     this.menuItemsCopy = this.menuItems.splice(0, 3);
   }
 
-  openPage(page) {
-    this.navCtrl.push(page);
+  openPage(item) {
+    this.navCtrl.push(item.page, {item: item});
   }
 
 }

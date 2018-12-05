@@ -1,6 +1,9 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>
+      <ion-icon name="md-home" style="margin-right:2rem"></ion-icon>
+      Home
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -13,7 +16,7 @@
   <ion-grid>
     <ion-row align-items-stretch justify-content-center>
       <ion-col text-center *ngFor="let item of menuItemsCopy">
-        <div class="c-button" (click)="openPage(item.page)">
+        <div class="c-button" (click)="openPage(item)">
           <div>
             <ion-icon [name]="item.icon"></ion-icon>
           </div>
@@ -25,7 +28,7 @@
     </ion-row>
     <ion-row align-items-stretch justify-content-center style="margin-top: 3rem;">
       <ion-col text-center *ngFor="let item of menuItems">
-        <div class="c-button" (click)="openPage(item.page)">
+        <div class="c-button" (click)="openPage(item)">
             <div>
               <ion-icon [name]="item.icon"></ion-icon>
             </div>
@@ -37,5 +40,6 @@
     </ion-row>
   </ion-grid>
   
+  <button ion-button color="primary" large block class="sticky-sponsors">Sponsors</button>
 
 </ion-content>
