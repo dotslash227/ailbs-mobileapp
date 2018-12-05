@@ -31,3 +31,7 @@
 .toolbar * {
 	color: white;
 }
+
+*[class^="header"]::after {
+	background: none !important;
+}

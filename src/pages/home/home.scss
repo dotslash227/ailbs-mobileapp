@@ -3,6 +3,9 @@ page-home {
 	.cover-img {
 		width: 100%;
 		margin-bottom: 5rem;
+		img {
+			width: 100%;
+		}
 	}
 
 	.c-button {
@@ -12,5 +15,15 @@ page-home {
 		ion-icon {
 			font-size: 100px;
 		}
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.sticky-sponsors {
+		position: fixed;
+		bottom: 0;
+		margin-bottom: 0;
 	}
 }
