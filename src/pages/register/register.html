@@ -7,6 +7,9 @@
 <ion-header>
 
   <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
     <ion-title>Register</ion-title>
   </ion-navbar>
 
@@ -14,5 +17,15 @@
 
 
 <ion-content padding>
-
+  <form [formGroup]="register" (ngSubmit)="logForm()">
+    <ion-item>
+      <ion-label stacked>Email</ion-label>
+      <ion-input type="text" formControlName="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Password</ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
+    </ion-item>
+    <button ion-button type="submit" [disabled]="!register.valid" color="light" block large>Submit</button>
+  </form>
 </ion-content>

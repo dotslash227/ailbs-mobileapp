@@ -1,3 +1,18 @@
 page-register {
+    .scroll-content {
+        background: color($colors, primary);
+        color: color($colors, light);
+    }
 
+    form {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & > * {
+            margin: 1rem !important;
+        }
+    }
 }

@@ -1,8 +1,5 @@
 <ion-header>
   <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
@@ -14,45 +11,28 @@
   </div>
 
   <ion-grid>
-    <ion-row align-items-center justify-content-center>
-      <ion-col text-center>
-        <div class="c-button">
-          <ion-icon name="archive"></ion-icon>
-          <label>Agenda</label>
-        </div>
-      </ion-col>
-      <ion-col text-center>
-        <div class="c-button">
-          <ion-icon name="md-barcode"></ion-icon>
-          <label>Conference Highlights</label>
-        </div>
-      </ion-col>
-      <ion-col text-center>
-          <div class="c-button">
-            <ion-icon name="microphone" style="display: block;"></ion-icon>
-            <label>Speaker</label>
+    <ion-row align-items-stretch justify-content-center>
+      <ion-col text-center *ngFor="let item of menuItemsCopy">
+        <div class="c-button" (click)="openPage(item.page)">
+          <div>
+            <ion-icon [name]="item.icon"></ion-icon>
           </div>
+          <div>
+            <label>{{item.label}}</label>
+          </div>
+        </div>
       </ion-col>
     </ion-row>
-    <ion-row style="margin-top: 3rem;">
-      <ion-col text-center>
-        <div class="c-button">
-            <ion-icon name="people"></ion-icon>
-            <label>Faculties</label>
+    <ion-row align-items-stretch justify-content-center style="margin-top: 3rem;">
+      <ion-col text-center *ngFor="let item of menuItems">
+        <div class="c-button" (click)="openPage(item.page)">
+            <div>
+              <ion-icon [name]="item.icon"></ion-icon>
+            </div>
+            <div>
+              <label>{{item.label}}</label>
+            </div>
         </div>
-          
-      </ion-col>
-      <ion-col text-center>
-          <div class="c-button">
-              <ion-icon name="paper"></ion-icon>
-              <label>Paper</label>
-          </div>
-      </ion-col>
-      <ion-col text-center>
-          <div class="c-button">
-              <ion-icon name="log-in"></ion-icon>
-              <label>Register</label>
-          </div>
       </ion-col>
     </ion-row>
   </ion-grid>
