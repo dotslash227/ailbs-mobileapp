@@ -18,12 +18,12 @@
 
 
 
-.toolbar-background-md {
+div[class^="toolbar-background"] {
     border-color: #b2b2b2;
     background: color($colors, primary, base);
 }
 
-.content-md {
+*[class^="content-"] {
 	padding: 0;
 	background: color($colors, secondary) !important;
 }
