@@ -26,6 +26,25 @@
       <ion-label stacked>Password</ion-label>
       <ion-input type="password" formControlName="password"></ion-input>
     </ion-item>
-    <button ion-button type="submit" [disabled]="!register.valid" color="light" block large>Submit</button>
+    <button ion-button type="submit" [disabled]="!register.valid" color="dark" block large>Submit</button>
   </form>
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        Or login with a social account
+      </ion-col>
+    </ion-row>
+    <ion-row justify-content-center>
+      <ion-col text-center>
+        <button ion-button>
+          <ion-icon name="logo-facebook" large></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button>
+          <ion-icon name="logo-googleplus" large></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

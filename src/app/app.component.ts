@@ -32,7 +32,7 @@ export class MyApp {
       {
         icon: parentDir + 'agenda-icon.png',
         label: 'Agenda',
-        page: ListPage
+        page: HomePage
       },
       {
         icon: parentDir + 'conf-highlights.png',
