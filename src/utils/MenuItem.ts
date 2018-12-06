@@ -66,9 +66,19 @@ export class MenuItem {
         },
         {
           icon: this.parentDir + 'login-icon.png',
-          label: 'Register',
+          label: 'Login/Register',
           page: 'RegisterPage'
-        }
+        },
+        {
+          icon: this.parentDir + 'privacy-icon.png',
+          label: 'Privacy Policy',
+          page: ListPage
+        },
+        {
+          icon: this.parentDir + 'tos-icon.png',
+          label: 'Terms of Use',
+          page: ListPage
+        },
       ];
 
     constructor() {
