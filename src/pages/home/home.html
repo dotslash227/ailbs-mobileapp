@@ -23,59 +23,11 @@
 
   <ion-grid style="text-align: center;">
     <ion-row>
-      <ion-col (click)="openPage(p)">
-        <img src="./assets/imgs/agenda-icon.png" class="icon-img" />
-        <h2>Agenda</h2>
-      </ion-col>
-      <ion-col (click)="openPage(ConferenceHighlights)">
-        <img src="./assets/imgs/conf-highlights.png" class="icon-img" />
-        <h2>Conference Highlights</h2>
-      </ion-col>
-      <ion-col (click)="openPage(p)">
-        <img src="./assets/imgs/faculty-icon.png" class="icon-img" />
-        <h2>Faculties</h2>
-      </ion-col>
-      <ion-col (click)="openPage(p)">
-        <img src="./assets/imgs/map.png" class="icon-img" />
-        <h2>Venue</h2>
+      <ion-col col-3 (click)="openPage(item)" *ngFor="let item of menuItems; let i=index">
+        <img [src]="item.icon" class="icon-img" />
+        <h2>{{item.label}}</h2>
       </ion-col>
     </ion-row>
-    <ion-row>
-      <ion-col (click)="openPage(p)">
-        <img src="./assets/imgs/news-icon.png" class="icon-img" />
-        <h2>News</h2>
-      </ion-col>
-      <ion-col (click)="openPage(p)">
-        <img src="./assets/imgs/Social-wall-icon.png" class="icon-img" />
-        <h2>Social Wall</h2>
-      </ion-col>
-      <ion-col (click)="openPage(p)">
-        <img src="./assets/imgs/Downloads-icon.png" class="icon-img" />
-        <h2>Downloads</h2>
-      </ion-col>
-      <ion-col (click)="openPage(p)">
-        <img src="./assets/imgs/login-icon.png" class="icon-img" />
-        <h2>Login/Register</h2>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-        <ion-col (click)="openPage(p)">
-          <img src="./assets/imgs/docs-icon.png" class="icon-img" />
-          <h2>Attendees</h2>
-        </ion-col>
-        <ion-col (click)="openPage(p)">
-          <img src="./assets/imgs/abouts-icon.png" class="icon-img" />
-          <h2>About AILBS</h2>
-        </ion-col>
-        <ion-col (click)="openPage(p)">
-          <img src="./assets/imgs/feedback-icon.png" class="icon-img" />
-          <h2>Feedback</h2>
-        </ion-col>
-        <ion-col (click)="openPage(p)">
-          <img src="./assets/imgs/contact-icon.png" class="icon-img" />
-          <h2>Contact</h2>
-        </ion-col>
-      </ion-row>
   </ion-grid>  
   <div style="border-top:1px solid grey;">
       <img src="./assets/imgs/sponsors.png" />
