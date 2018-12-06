@@ -41,6 +41,11 @@ export class MenuItem {
           page: ListPage
         },
         {
+          icon: this.parentDir + 'map.png',
+          label: 'Venue',
+          page: ListPage
+        },
+        {
           icon: this.parentDir + 'abouts-icon.png',
           label: 'About Us',
           page: ListPage
