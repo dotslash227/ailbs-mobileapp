@@ -53,6 +53,17 @@ div[class^="toolbar-background"] {
 	background: none;
 }
 
-.logo {
-	padding: 1.6rem;
+.logo{
+	text-align: center;
+	background-color:teal;		
+	color:white;
+	padding: 1.6em;
+	h3{
+		font-size:18px;
+	}
+	p{
+		color:white;
+		font-size:10px;
+		margin-top:-1em;
+	}
 }

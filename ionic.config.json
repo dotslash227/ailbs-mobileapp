@@ -1,5 +1,7 @@
 {
-  "name": "conference-app",
-  "integrations": {},
+  "name": "ailbs-india-conference",
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

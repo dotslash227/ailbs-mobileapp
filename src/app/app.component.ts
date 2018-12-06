@@ -6,6 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { ConferenceHighlightsPage } from '../pages/conference-highlights/conference-highlights';
+import { MenuItem } from '../utils/MenuItem';
 
 @Component({
   templateUrl: 'app.html'
@@ -26,45 +27,8 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'List', component: ListPage }
     ];
-
-    const parentDir = './assets/imgs/'
-    this.menuItems = [
-      {
-        icon: parentDir + 'agenda-icon.png',
-        label: 'Agenda',
-        page: HomePage
-      },
-      {
-        icon: parentDir + 'conf-highlights.png',
-        label: 'Conference Highlights',
-        page: ConferenceHighlightsPage
-      },
-      {
-        icon: parentDir + 'news-icon.png',
-        label: 'News',
-        page: ListPage
-      },
-      {
-        icon: parentDir + 'faculty-icon.png',
-        label: 'Faculties',
-        page: ListPage
-      },
-      {
-        icon: parentDir + 'Downloads-icon.png',
-        label: 'Downloads',
-        page: ListPage
-      },
-      {
-        icon: parentDir + 'Social-wall-icon.png',
-        label: 'Social Wall',
-        page: ListPage
-      },
-      {
-        icon: parentDir + 'login-icon.png',
-        label: 'Register',
-        page: 'RegisterPage'
-      }
-    ];
+    
+    this.menuItems = new MenuItem().getMenuItems();
 
   }
 

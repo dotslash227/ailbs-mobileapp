@@ -4,17 +4,42 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      Agenda
+      Home | AILBS Conference 2019
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content no-padding>
+<ion-content no-padding class="bg">
 
-  <div class="cover-img">
-    <img src="./assets/imgs/conference.jpg">
+  <div class="logo">
+    <img src="./assets/imgs/ailbslogo.png" />
+    <h3>International Conference 2019</h3>
+    <p>15-17 February 2019 | Hotel ITC Maurya and Taj Palace</p>
   </div>
 
+  <div class="cover-img">
+    <img src="./assets/imgs/akshardham.jpg">
+  </div>
 
-</ion-content>
-
+  <ion-grid style="text-align: center;">
+    <ion-row>
+      <ion-col col-3 (click)="openPage(item)" *ngFor="let item of menuItems; let i=index">
+        <img [src]="item.icon" class="icon-img" />
+        <h2>{{item.label}}</h2>
+      </ion-col>
+    </ion-row>
+  </ion-grid>  
+  <div style="border-top:1px solid grey;">
+      <img src="./assets/imgs/sponsors.png" />
+    </div>
+  <ion-grid style="text-align: center;">
+      <ion-row>
+        <ion-col (click)="openPage(p)">
+          <img src="./assets/imgs/hlt.png" class="sponsor-logo" />
+        </ion-col>
+        <ion-col (click)="openPage(p)">
+            <img src="./assets/imgs/fortis.png" class="sponsor-logo" />
+          </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>  
