@@ -18,14 +18,13 @@
 
 <ion-content padding>
 
-  <ion-card *ngFor="let h of highlights">
+  <ion-list inset>
+      <ion-item *ngFor="let h of highlights">
 
-    <ion-card-content class="card">
-      {{h}}
-    </ion-card-content>
+    {{h}}
 
-  </ion-card>
-
+        </ion-item>
+  </ion-list>
   <ion-card>
 
     <img src="./assets/imgs/map.png">
