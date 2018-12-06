@@ -1,0 +1,5 @@
+APIS for AILBS
+GET SurgeryFaculty - https://www.ailbsindiaconference.com/apis/surgery-faculty
+GET AnesthesiaFaculty - https://www.ailbsindiaconference.com/apis/anes-faculty
+GET HepatologyFaculty - https://www.ailbsindiaconference.com/apis/hepa-faculty
+GET InternationalFaculty -  https://www.ailbsindiaconference.com/apis/international-faculty
