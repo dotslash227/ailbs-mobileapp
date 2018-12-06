@@ -30,6 +30,11 @@ export class MyApp {
     const parentDir = './assets/imgs/'
     this.menuItems = [
       {
+        icon: parentDir + 'home-icon.jpg',
+        label: 'Home',
+        page: HomePage
+      },
+      {
         icon: parentDir + 'agenda-icon.png',
         label: 'Agenda',
         page: HomePage
@@ -52,6 +57,25 @@ export class MyApp {
       {
         icon: parentDir + 'Downloads-icon.png',
         label: 'Downloads',
+        page: ListPage
+      },
+      {
+        icon: parentDir + 'docs-icon.png',
+        label: 'Attendees',
+        page: ListPage
+      },
+      {
+        icon: parentDir + 'abouts-icon.png',
+        label: 'About Us',
+        page: ListPage
+      },{
+        icon: parentDir + 'feedback-icon.png',
+        label: 'Feedback',
+        page: ListPage
+      },
+      {
+        icon: parentDir + 'contact-icon.png',
+        label: 'Contact Us',
         page: ListPage
       },
       {

@@ -4,17 +4,90 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      Home
+      Home | AILBS Conference 2019
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content no-padding>
+<ion-content no-padding class="bg">
 
-  <div class="cover-img">
-    <img src="./assets/imgs/conference.jpg">
+  <div class="logo">
+    <img src="./assets/imgs/ailbslogo.png" />
+    <h3>International Conference 2019</h3>
+    <p>15-17 February 2019 | Hotel ITC Maurya and Taj Palace</p>
   </div>
 
+  <div class="cover-img">
+    <img src="./assets/imgs/akshardham.jpg">
+  </div>
 
-</ion-content>
-
+  <ion-grid style="text-align: center;">
+    <ion-row>
+      <ion-col (click)="openPage(p)">
+        <img src="./assets/imgs/agenda-icon.png" class="icon-img" />
+        <h2>Agenda</h2>
+      </ion-col>
+      <ion-col (click)="openPage(ConferenceHighlights)">
+        <img src="./assets/imgs/conf-highlights.png" class="icon-img" />
+        <h2>Conference Highlights</h2>
+      </ion-col>
+      <ion-col (click)="openPage(p)">
+        <img src="./assets/imgs/faculty-icon.png" class="icon-img" />
+        <h2>Faculties</h2>
+      </ion-col>
+      <ion-col (click)="openPage(p)">
+        <img src="./assets/imgs/map.png" class="icon-img" />
+        <h2>Venue</h2>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col (click)="openPage(p)">
+        <img src="./assets/imgs/news-icon.png" class="icon-img" />
+        <h2>News</h2>
+      </ion-col>
+      <ion-col (click)="openPage(p)">
+        <img src="./assets/imgs/Social-wall-icon.png" class="icon-img" />
+        <h2>Social Wall</h2>
+      </ion-col>
+      <ion-col (click)="openPage(p)">
+        <img src="./assets/imgs/Downloads-icon.png" class="icon-img" />
+        <h2>Downloads</h2>
+      </ion-col>
+      <ion-col (click)="openPage(p)">
+        <img src="./assets/imgs/login-icon.png" class="icon-img" />
+        <h2>Login/Register</h2>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col (click)="openPage(p)">
+          <img src="./assets/imgs/docs-icon.png" class="icon-img" />
+          <h2>Attendees</h2>
+        </ion-col>
+        <ion-col (click)="openPage(p)">
+          <img src="./assets/imgs/abouts-icon.png" class="icon-img" />
+          <h2>About AILBS</h2>
+        </ion-col>
+        <ion-col (click)="openPage(p)">
+          <img src="./assets/imgs/feedback-icon.png" class="icon-img" />
+          <h2>Feedback</h2>
+        </ion-col>
+        <ion-col (click)="openPage(p)">
+          <img src="./assets/imgs/contact-icon.png" class="icon-img" />
+          <h2>Contact</h2>
+        </ion-col>
+      </ion-row>
+  </ion-grid>  
+  <div style="border-top:1px solid grey;">
+      <img src="./assets/imgs/sponsors.png" />
+    </div>
+  <ion-grid style="text-align: center;">
+      <ion-row>
+        <ion-col (click)="openPage(p)">
+          <img src="./assets/imgs/hlt.png" class="sponsor-logo" />
+        </ion-col>
+        <ion-col (click)="openPage(p)">
+            <img src="./assets/imgs/fortis.png" class="sponsor-logo" />
+          </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>  
