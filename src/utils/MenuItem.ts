@@ -1,6 +1,10 @@
 import { HomePage } from "../pages/home/home";
 import { ConferenceHighlightsPage } from "../pages/conference-highlights/conference-highlights";
 import { ListPage } from "../pages/list/list";
+import { PolicyPage } from "../pages/policy/policy";
+import { TermsPage } from "../pages/terms/terms";
+import { ContactPage } from "../pages/contact/contact";
+import { VenuePage } from "../pages/venue/venue";
 
 export class MenuItem {
     parentDir = './assets/imgs/'
@@ -43,7 +47,7 @@ export class MenuItem {
         {
           icon: this.parentDir + 'map.png',
           label: 'Venue',
-          page: ListPage
+          page: VenuePage
         },
         {
           icon: this.parentDir + 'abouts-icon.png',
@@ -57,7 +61,7 @@ export class MenuItem {
         {
           icon: this.parentDir + 'contact-icon.png',
           label: 'Contact Us',
-          page: ListPage
+          page: ContactPage
         },
         {
           icon: this.parentDir + 'Social-wall-icon.png',
@@ -72,12 +76,12 @@ export class MenuItem {
         {
           icon: this.parentDir + 'privacy-icon.png',
           label: 'Privacy Policy',
-          page: ListPage
+          page: PolicyPage
         },
         {
           icon: this.parentDir + 'tos-icon.png',
           label: 'Terms of Use',
-          page: ListPage
+          page: TermsPage
         },
       ];
 
