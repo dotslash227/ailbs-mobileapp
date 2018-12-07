@@ -3,6 +3,6 @@ GET SurgeryFaculty - https://www.ailbsindiaconference.com/apis/surgery-faculty
 GET AnesthesiaFaculty - https://www.ailbsindiaconference.com/apis/anes-faculty
 GET HepatologyFaculty - https://www.ailbsindiaconference.com/apis/hepa-faculty
 GET InternationalFaculty -  https://www.ailbsindiaconference.com/apis/international-faculty
-GET DownloadsList - https://www.ailbsindiaconference.com/apis/get-downloads
-GET NewsList - https://www.ailbsindiaconference.com/apis/get-news-list
-GET NewsItem - https://www.ailbsindiaconference.com/apis/news/<newsid>
+GET DownloadsList - https://www.ailbsindiaconference.com/apis/get-downloads [response: name, url]
+GET NewsList - https://www.ailbsindiaconference.com/apis/get-news-list [response: id, title, description, image]
+GET NewsItem - https://www.ailbsindiaconference.com/apis/news/<newsid> [response: id, title, content, image]
