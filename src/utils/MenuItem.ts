@@ -5,6 +5,7 @@ import { PolicyPage } from "../pages/policy/policy";
 import { TermsPage } from "../pages/terms/terms";
 import { ContactPage } from "../pages/contact/contact";
 import { VenuePage } from "../pages/venue/venue";
+import { AboutPage } from "../pages/about/about";
 
 export class MenuItem {
     parentDir = './assets/imgs/'
@@ -52,7 +53,7 @@ export class MenuItem {
         {
           icon: this.parentDir + 'abouts-icon.png',
           label: 'About Us',
-          page: ListPage
+          page: AboutPage
         },{
           icon: this.parentDir + 'feedback-icon.png',
           label: 'Feedback',
