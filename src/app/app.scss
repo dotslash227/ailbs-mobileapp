@@ -18,12 +18,12 @@
 
 
 
-.toolbar-background-md {
+div[class^="toolbar-background"] {
     border-color: #b2b2b2;
     background: color($colors, primary, base);
 }
 
-.content-md {
+*[class^="content-"] {
 	padding: 0;
 	background: color($colors, light) !important;
 }
@@ -53,6 +53,25 @@
 	background: none;
 }
 
-.logo {
-	padding: 1.6rem;
+.logo{
+	text-align: center;
+	background-color:teal;		
+	color:white;
+	padding: 1.6em;
+	h3{
+		font-size:18px;
+	}
+	p{
+		color:white;
+		font-size:10px;
+		margin-top:-1em;
+	}
+}
+
+.menu-footer{
+	
+	p{
+		color:teal;
+		font-size: 10px;
+	}
 }

@@ -86,3 +86,8 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+ion-header{
+  text-align: center;
+  border-bottom: 0.5px solid #F5F5F5;  
+}

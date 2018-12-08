@@ -1,8 +1,24 @@
 page-home {
 
+	.sponsor-logo{
+		height: 75px;
+	}
+
+	.logo{
+		text-align: center;
+		background-color:teal;		
+		color:white;
+		border-bottom: 0.5px solid white;
+		p{
+			color:white;
+			font-size:10px;
+			margin-top:-1em;
+		}
+	}
+
 	.cover-img {
 		width: 100%;
-		margin-bottom: 5rem;
+		margin-bottom: 2rem;
 		img {
 			width: 100%;
 		}
@@ -25,5 +41,17 @@ page-home {
 		position: fixed;
 		bottom: 0;
 		margin-bottom: 0;
+	}
+	.bg{
+		background-color:#FFFAF0;
+	}
+	.icon-img{
+		width: 50px;
+		height: 50px;
+	}
+	h2{
+		color:teal;
+		text-align:center;
+		font-size: 12px;
 	}
 }
