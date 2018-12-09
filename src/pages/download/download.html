@@ -18,9 +18,9 @@
 
 <ion-content padding>
   <ion-list inset>
-    <a ion-button ion-item *ngFor="let item of downloadItems" [href]="item.url">
+    <button ion-item *ngFor="let item of downloadItems">
       {{ item.name }}
       <ion-icon name="ios-arrow-forward" item-end></ion-icon>
-    </a>
+    </button>
   </ion-list>
 </ion-content>

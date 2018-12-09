@@ -16,7 +16,7 @@ import { ApiProvider } from '../../providers/api/api';
 })
 export class NewsItemPage {
   newsId;
-  item = {title: 'Loading', content: 'Loading', image: null};
+  item:any = {title: 'Loading', content: 'Loading', image: null};
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
     private apiProvider: ApiProvider) {
