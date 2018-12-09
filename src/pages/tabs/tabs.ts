@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { ListPage } from '../list/list';
+import { SurgeryFacultyPage } from '../surgery-faculty/surgery-faculty';
+import { AnesthesiaFacultyPage } from '../anesthesia-faculty/anesthesia-faculty';
+import { HepatologyFacultyPage } from '../hepatology-faculty/hepatology-faculty';
 
 /**
  * Generated class for the TabsPage page.
@@ -16,9 +19,9 @@ import { ListPage } from '../list/list';
   templateUrl: 'tabs.html',
 })
 export class TabsPage {
-  tab1Root = HomePage;
-  tab2Root = ListPage;
-  tab3Root = ListPage;
+  tab1Root = SurgeryFacultyPage;
+  tab2Root = AnesthesiaFacultyPage;
+  tab3Root = HepatologyFacultyPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

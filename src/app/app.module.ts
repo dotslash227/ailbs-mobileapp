@@ -24,6 +24,9 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { NewsPage } from '../pages/news/news';
 import { NewsItemPage } from '../pages/news-item/news-item';
 import { DownloadPage } from '../pages/download/download';
+import { SurgeryFacultyPage } from '../pages/surgery-faculty/surgery-faculty';
+import { AnesthesiaFacultyPage } from '../pages/anesthesia-faculty/anesthesia-faculty';
+import { HepatologyFacultyPage } from '../pages/hepatology-faculty/hepatology-faculty';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,10 @@ import { DownloadPage } from '../pages/download/download';
     TabsPage,
     NewsPage,
     NewsItemPage,
-    DownloadPage
+    DownloadPage,
+    SurgeryFacultyPage,
+    AnesthesiaFacultyPage,
+    HepatologyFacultyPage
   ],
   imports: [
     BrowserModule,
@@ -63,7 +69,10 @@ import { DownloadPage } from '../pages/download/download';
     TabsPage,
     NewsPage,
     NewsItemPage,
-    DownloadPage
+    DownloadPage,
+    SurgeryFacultyPage,
+    AnesthesiaFacultyPage,
+    HepatologyFacultyPage
   ],
   providers: [
     StatusBar,
