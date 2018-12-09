@@ -1,0 +1,26 @@
+<!--
+  Generated template for the DownloadPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Downloads</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list inset>
+    <a ion-button ion-item *ngFor="let item of downloadItems" [href]="item.url">
+      {{ item.name }}
+      <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+    </a>
+  </ion-list>
+</ion-content>

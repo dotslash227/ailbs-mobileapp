@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
+
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
@@ -15,6 +18,12 @@ import { PolicyPage } from '../pages/policy/policy';
 import { ContactPage } from '../pages/contact/contact';
 import { TermsPage } from '../pages/terms/terms';
 import { VenuePage } from '../pages/venue/venue';
+import { ApiProvider } from '../providers/api/api';
+import { FacultyPage } from '../pages/faculty/faculty';
+import { TabsPage } from '../pages/tabs/tabs';
+import { NewsPage } from '../pages/news/news';
+import { NewsItemPage } from '../pages/news-item/news-item';
+import { DownloadPage } from '../pages/download/download';
 
 @NgModule({
   declarations: [
@@ -26,11 +35,18 @@ import { VenuePage } from '../pages/venue/venue';
     ContactPage,
     PolicyPage,
     TermsPage,
-    VenuePage
+    VenuePage,
+    FacultyPage,
+    TabsPage,
+    NewsPage,
+    NewsItemPage,
+    DownloadPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    HttpClientModule,
+    HttpModule 
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -42,12 +58,18 @@ import { VenuePage } from '../pages/venue/venue';
     ContactPage,
     PolicyPage,
     TermsPage,
-    VenuePage
+    VenuePage,
+    FacultyPage,
+    TabsPage,
+    NewsPage,
+    NewsItemPage,
+    DownloadPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ApiProvider
   ]
 })
 export class AppModule {}

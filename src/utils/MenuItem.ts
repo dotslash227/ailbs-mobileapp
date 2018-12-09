@@ -6,6 +6,9 @@ import { TermsPage } from "../pages/terms/terms";
 import { ContactPage } from "../pages/contact/contact";
 import { VenuePage } from "../pages/venue/venue";
 import { AboutPage } from "../pages/about/about";
+import { FacultyPage } from "../pages/faculty/faculty";
+import { NewsPage } from "../pages/news/news";
+import { DownloadPage } from "../pages/download/download";
 
 export class MenuItem {
     parentDir = './assets/imgs/'
@@ -28,17 +31,17 @@ export class MenuItem {
         {
           icon: this.parentDir + 'news-icon.png',
           label: 'News',
-          page: ListPage
+          page: NewsPage
         },
         {
           icon: this.parentDir + 'faculty-icon.png',
           label: 'Faculties',
-          page: ListPage
+          page: FacultyPage
         },
         {
           icon: this.parentDir + 'Downloads-icon.png',
           label: 'Downloads',
-          page: ListPage
+          page: DownloadPage
         },
         {
           icon: this.parentDir + 'docs-icon.png',
