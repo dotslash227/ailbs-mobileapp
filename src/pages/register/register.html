@@ -10,14 +10,25 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Register</ion-title>
+    <ion-title>Register for the Conference</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-  <form [formGroup]="register" (ngSubmit)="logForm()">
+<ion-content padding class="bg">
+
+  <img src="../assets/imgs/deadline.jpg" />
+
+
+  <p class="head">Registrations for the AILBS Conference is open and slots are vacant for the workshops as well.</p>
+
+  <p class="nonhead">For more details click on the link below for the form and the registration fee details.</p>
+
+  <button class="btn" (click)="openRegistrationForm()">Click here to Visit the registration page and apply for registration</button>
+  
+
+  <!-- <form [formGroup]="register" (ngSubmit)="logForm()">
     <ion-item>
       <ion-label stacked>Email</ion-label>
       <ion-input type="text" formControlName="email"></ion-input>
@@ -46,5 +57,21 @@
         </button>
       </ion-col>
     </ion-row>
-  </ion-grid>
+  </ion-grid> -->
 </ion-content>
+
+<ion-footer>
+    <div style="border-top:1px solid grey;">
+        <img src="./assets/imgs/sponsors.png" />
+      </div>
+    <ion-grid style="text-align: center;">
+        <ion-row>
+          <ion-col (click)="openPage(p)">
+            <img src="./assets/imgs/hlt.png" class="sponsor-logo" />
+          </ion-col>
+          <ion-col (click)="openPage(p)">
+              <img src="./assets/imgs/fortis.png" class="sponsor-logo" />
+            </ion-col>
+        </ion-row>
+      </ion-grid>
+</ion-footer>

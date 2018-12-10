@@ -25,6 +25,10 @@ export class RegisterPage {
     });
   }
 
+  openRegistrationForm(){
+    window.open("http://www.ailbsindiaconference.com/registration");
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad RegisterPage');
   }
