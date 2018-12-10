@@ -21,6 +21,10 @@ export class DownloadPage {
     private apiProvider: ApiProvider) {
   }
 
+  openLink(item){
+    window.open(item.url, "_system", "location=yes");
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad DownloadPage');
 
