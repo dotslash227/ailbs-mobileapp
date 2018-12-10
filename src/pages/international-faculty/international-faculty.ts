@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ApiProvider } from '../../providers/api/api';
 
 /**
- * Generated class for the NewsItemPage page.
+ * Generated class for the SurgeryFacultyPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,33 +11,29 @@ import { ApiProvider } from '../../providers/api/api';
 
 @IonicPage()
 @Component({
-  selector: 'page-news-item',
-  templateUrl: 'news-item.html',
+  selector: 'page-international-faculty',
+  templateUrl: 'international-faculty.html',
 })
-export class NewsItemPage {
-  newsId;
-  htmlContent;
-  item:any = {title: 'Loading', content: 'Loading', image: null};
+export class InternationalFacultyPage {
+  items:any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
     private apiProvider: ApiProvider) {
-    this.newsId = this.navParams.get('id');
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad NewsItemPage', this.newsId);
+    console.log('ionViewDidLoad InternationalFacultyPage');
 
-    this.apiProvider.getNewsItem(this.newsId)
+    this.apiProvider.getInternationalFaculty()
     .subscribe(
       res => {
-        this.item = res;
-        this.htmlContent = this.item.content;
+        this.items = res;
       },
       error => {
-        console.log(error)
+        console.log(error);
       },
       () => {
-        console.log('complete', this.item);
+        console.log('completed', this.items);
       }
     )
   }

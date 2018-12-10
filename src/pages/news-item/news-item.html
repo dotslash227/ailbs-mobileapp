@@ -10,12 +10,19 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>{{item.title}}</ion-title>
+    <ion-title>{{item.title}} | AILBS Conference 2019</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-{{item.content}}
+<ion-content padding class="bg">
+
+  <h2>{{item.title}}</h2>
+
+  <img src="{{item.image}}" />
+
+  <div class="content" [innerHtml]="htmlContent"></div>
+
+
 </ion-content>

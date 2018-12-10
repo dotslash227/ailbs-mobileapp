@@ -27,6 +27,7 @@ import { DownloadPage } from '../pages/download/download';
 import { SurgeryFacultyPage } from '../pages/surgery-faculty/surgery-faculty';
 import { AnesthesiaFacultyPage } from '../pages/anesthesia-faculty/anesthesia-faculty';
 import { HepatologyFacultyPage } from '../pages/hepatology-faculty/hepatology-faculty';
+import { InternationalFacultyPage } from '../pages/international-faculty/international-faculty';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { HepatologyFacultyPage } from '../pages/hepatology-faculty/hepatology-fa
     DownloadPage,
     SurgeryFacultyPage,
     AnesthesiaFacultyPage,
-    HepatologyFacultyPage
+    HepatologyFacultyPage,
+    InternationalFacultyPage,
   ],
   imports: [
     BrowserModule,
@@ -72,7 +74,8 @@ import { HepatologyFacultyPage } from '../pages/hepatology-faculty/hepatology-fa
     DownloadPage,
     SurgeryFacultyPage,
     AnesthesiaFacultyPage,
-    HepatologyFacultyPage
+    HepatologyFacultyPage,
+    InternationalFacultyPage
   ],
   providers: [
     StatusBar,

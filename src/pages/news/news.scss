@@ -1,3 +1,16 @@
 page-news {
+    .bg{
+        background-color:#FFFAF0;
+    }
+    .news-item{
+        background-color:white;
+        img{
+            max-width:100px;
+        }
+        h4{
+            text-align: left;
+            color:teal;
+        }
+    }
 
 }

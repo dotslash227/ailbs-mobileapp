@@ -5,6 +5,7 @@ import { ListPage } from '../list/list';
 import { SurgeryFacultyPage } from '../surgery-faculty/surgery-faculty';
 import { AnesthesiaFacultyPage } from '../anesthesia-faculty/anesthesia-faculty';
 import { HepatologyFacultyPage } from '../hepatology-faculty/hepatology-faculty';
+import { InternationalFacultyPage } from '../international-faculty/international-faculty';
 
 /**
  * Generated class for the TabsPage page.
@@ -22,6 +23,7 @@ export class TabsPage {
   tab1Root = SurgeryFacultyPage;
   tab2Root = AnesthesiaFacultyPage;
   tab3Root = HepatologyFacultyPage;
+  tab4root = InternationalFacultyPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

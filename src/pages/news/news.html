@@ -10,17 +10,27 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>News</ion-title>
+    <ion-title>News at AILBS Conference</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-  <ion-list inset>
-    <button ion-item *ngFor="let item of items" (click)="itemSelected(item.id)">
-      {{ item.title }}
-      <ion-icon name="ios-arrow-forward" item-end></ion-icon>
-    </button>
-  </ion-list>
+<ion-content padding class="bg">
+
+  <div (click)="itemSelected(item.id)" *ngFor="let item of items" class="news-item">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-4>
+            <img src="{{item.image}}">
+        </ion-col>
+        <ion-col>
+            <h4>{{item.title}}</h4>
+            <p>{{item.description}}</p>
+            <p (click)="itemSelected(item.id)">Click to read more</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>    
+  </div>
+  
 </ion-content>

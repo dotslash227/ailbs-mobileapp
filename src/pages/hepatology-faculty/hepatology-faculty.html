@@ -13,14 +13,16 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="bg">
+
   <ion-list>
+    <p style="text-align: center;">Workshops at the AILBS International Conference 2019 will be conducted by prominent International and National Surgeons and Academics.</p>
     <ion-item *ngFor="let item of items">
-      <h2>{{item.fname}} {{item.lanme}}</h2>
-      <p item-end>
-        <ion-icon name="pin"></ion-icon>
-        {{item.city}}
+      <h2>{{item.fname}} {{item.lname}}</h2>
+      <p item-end>        
+        {{item.city}}        
       </p>
     </ion-item>
   </ion-list>
+
 </ion-content>
