@@ -9,6 +9,7 @@ import { AboutPage } from "../pages/about/about";
 import { FacultyPage } from "../pages/faculty/faculty";
 import { NewsPage } from "../pages/news/news";
 import { DownloadPage } from "../pages/download/download";
+import { ScientificCommitteePage } from "../pages/scientific-committee/scientific-committee";
 
 export class MenuItem {
     parentDir = './assets/imgs/'
@@ -27,6 +28,11 @@ export class MenuItem {
           icon: this.parentDir + 'conf-highlights.png',
           label: 'Conference Highlights',
           page: ConferenceHighlightsPage
+        },
+        {
+          icon: this.parentDir + 'science.png',
+          label: 'Scientific Committee',
+          page: ScientificCommitteePage
         },
         {
           icon: this.parentDir + 'news-icon.png',

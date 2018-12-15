@@ -1,0 +1,46 @@
+page-scientific-committee {
+
+    .bg{
+        background-color:#FFFAF0;
+        text-align: center;
+        color: teal;        
+    }
+
+    .part{
+
+        h3{
+            padding-bottom: 5px;
+            border-bottom: 0.5px solid white;
+        }
+
+        color:white;
+        padding: 10px;
+        margin-bottom: 15px;
+        background-color: teal;
+    }
+
+    .part-alt{
+
+        h3{
+            padding-bottom: 5px;
+            border-bottom: 0.5px solid white;
+        }
+
+        .divider{
+            border-right: 0.5px solid white;
+            margin-right: 3px;
+        }
+
+        color:white;
+        padding: 10px;
+        margin-bottom: 15px;
+        background-color: teal;
+        font-size: 18px;
+    }
+
+    .docimg{
+        width: 150px;
+        height: 125px;
+    }
+    
+}
