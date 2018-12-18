@@ -22,6 +22,7 @@ export class ApiProvider {
   downloadList = this.domain.concat('get-downloads');
   newsList = this.domain.concat('get-news-list');
   newsItem = this.domain.concat('news');
+  agenda = this.domain.concat("agenda");
 
   getSurgeryFaculty() {
     return this.http.get(this.surgeryFaculty);
@@ -49,6 +50,9 @@ export class ApiProvider {
 
   getNewsItem(id) {
     return this.http.get(this.newsItem + '/' + id);
+  }
+  getAgenda(day){
+    return this.http.get(this.agenda + "/" + day);
   }
 
 }

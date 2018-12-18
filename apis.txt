@@ -6,3 +6,4 @@ GET InternationalFaculty -  https://www.ailbsindiaconference.com/apis/internatio
 GET DownloadsList - https://www.ailbsindiaconference.com/apis/get-downloads [response: name, url]
 GET NewsList - https://www.ailbsindiaconference.com/apis/get-news-list [response: id, title, description, image]
 GET NewsItem - https://www.ailbsindiaconference.com/apis/news/<newsid> [response: id, title, content, image]
+GET Agends - https://www.ailbsindiaconference.com/apis/agenda/<daynum>
