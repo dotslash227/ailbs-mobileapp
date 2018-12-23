@@ -30,6 +30,7 @@ import { HepatologyFacultyPage } from '../pages/hepatology-faculty/hepatology-fa
 import { InternationalFacultyPage } from '../pages/international-faculty/international-faculty';
 import { ScientificCommitteePage } from '../pages/scientific-committee/scientific-committee';
 import { GoogleMaps } from "@ionic-native/google-maps";
+import { InAppBrowser } from "@ionic-native/in-app-browser";
 
 @NgModule({
   declarations: [
@@ -86,7 +87,8 @@ import { GoogleMaps } from "@ionic-native/google-maps";
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ApiProvider,
-    GoogleMaps
+    GoogleMaps,
+    InAppBrowser
   ]
 })
 export class AppModule {}
