@@ -79,14 +79,7 @@ export class VenuePage {
         lat: 28.5974182,
         lng: 77.1738331
       }
-    });
-    marker.on(GoogleMapsEvent.MARKER_CLICK).subscribe(() => {
-      alert('clicked');
-    });
-    marker2.on(GoogleMapsEvent.MARKER_CLICK).subscribe(() => {
-      alert('clicked');
-    });
-
+    });    
   }
 
   ionViewDidLoad() {

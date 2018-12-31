@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ListPage } from '../list/list';
 import { RegisterPage } from '../register/register';
 import { MenuItem } from '../../utils/MenuItem';
+import { Slides } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
@@ -10,11 +11,17 @@ import { MenuItem } from '../../utils/MenuItem';
 })
 export class HomePage {
 
+  @ViewChild(Slides) slides: Slides;
+
   menuItems;
 
   constructor(public navCtrl: NavController) {
     this.menuItems = new MenuItem().getMenuItems();
   }
+
+  // autoplaySlides(){
+  //   this.slides.startAutoplay();
+  // }
 
   openPage(page) {
     // Reset the content nav to have just this page
