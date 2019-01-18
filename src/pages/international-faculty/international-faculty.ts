@@ -21,6 +21,10 @@ export class InternationalFacultyPage {
     private apiProvider: ApiProvider) {
   }
 
+  openLink(item){
+    window.open(item.cvlink, "_system", "location=yes");
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad InternationalFacultyPage');
 

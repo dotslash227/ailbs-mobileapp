@@ -10,6 +10,7 @@ import { FacultyPage } from "../pages/faculty/faculty";
 import { NewsPage } from "../pages/news/news";
 import { DownloadPage } from "../pages/download/download";
 import { ScientificCommitteePage } from "../pages/scientific-committee/scientific-committee";
+import { AgendaPage } from "../pages/agenda/agenda";
 
 export class MenuItem {
     parentDir = './assets/imgs/'
@@ -22,7 +23,7 @@ export class MenuItem {
         {
           icon: this.parentDir + 'agenda-icon.png',
           label: 'Agenda',
-          page: ListPage
+          page: AgendaPage
         },
         {
           icon: this.parentDir + 'conf-highlights.png',
@@ -41,7 +42,7 @@ export class MenuItem {
         },
         {
           icon: this.parentDir + 'faculty-icon.png',
-          label: 'Faculties',
+          label: 'Faculty',
           page: FacultyPage
         },
         {

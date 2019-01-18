@@ -20,7 +20,9 @@ import { TermsPage } from '../pages/terms/terms';
 import { VenuePage } from '../pages/venue/venue';
 import { ApiProvider } from '../providers/api/api';
 import { FacultyPage } from '../pages/faculty/faculty';
+import { AgendaPage } from '../pages/agenda/agenda';
 import { TabsPage } from '../pages/tabs/tabs';
+import { TabsPageAgenda } from '../pages/agenda-tabs/agenda-tabs';
 import { NewsPage } from '../pages/news/news';
 import { NewsItemPage } from '../pages/news-item/news-item';
 import { DownloadPage } from '../pages/download/download';
@@ -31,6 +33,8 @@ import { InternationalFacultyPage } from '../pages/international-faculty/interna
 import { ScientificCommitteePage } from '../pages/scientific-committee/scientific-committee';
 import { GoogleMaps } from "@ionic-native/google-maps";
 import { InAppBrowser } from "@ionic-native/in-app-browser";
+import { ProgramGlance } from '../pages/program-glance/program-glance';
+import { DailyProgram } from '../pages/daily-program/daily-program';
 
 @NgModule({
   declarations: [
@@ -52,7 +56,11 @@ import { InAppBrowser } from "@ionic-native/in-app-browser";
     AnesthesiaFacultyPage,
     HepatologyFacultyPage,
     InternationalFacultyPage,
-    ScientificCommitteePage
+    ScientificCommitteePage,
+    TabsPageAgenda,
+    AgendaPage,
+    ProgramGlance,
+    DailyProgram
   ],
   imports: [
     BrowserModule,
@@ -80,7 +88,11 @@ import { InAppBrowser } from "@ionic-native/in-app-browser";
     AnesthesiaFacultyPage,
     HepatologyFacultyPage,
     InternationalFacultyPage,
-    ScientificCommitteePage
+    ScientificCommitteePage,
+    TabsPageAgenda,
+    AgendaPage,
+    ProgramGlance,
+    DailyProgram
   ],
   providers: [
     StatusBar,

@@ -20,7 +20,7 @@
 
         <div *ngFor="let item of items" class="ifac">
             <ion-grid>
-                <ion-row>
+                <ion-row (click)="openLink(item)">
                     <ion-col class="doc-pic">
                        <img src="{{item.image}}" /> 
                     </ion-col>

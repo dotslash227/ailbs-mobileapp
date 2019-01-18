@@ -18,9 +18,11 @@ export class ConferenceHighlightsPage {
 
   highlights = ['Eminent International and National Faculty', 
   'AILBS Oration : John Fung', 
-  'State of the Art Lectures by Pioneers: Goran Klintmalm, Mohamed Rela, Abhinav Humar',   
-  'Workshops by : Minimally Invasive Liver Surgery: KW Lee, Olivier Soubrane, Vivek Vij | SALT Workshop on ROTEM: Klaus Görlinger',      
-  'Symposium: DDLT in India - Current Status', 
+  'State of the Art Lectures by Pioneers: Goran Klintmalm, Mohamed Rela, Abhinav Humar, Nancy Kwan MAN, Klaus Görlinger, Sanjeev Aneja',   
+  'Workshops by : Minimally Invasive Liver Surgery: KW Lee, Olivier Soubrane, Vivek Vij | SALT Workshop on ROTEM: Klaus Görlinger and Piyush Srivastava',      
+  'Symposium: DDLT in India - Current Status',
+  'Documentary "Burden of Genius": Dr Starzl Journey into Organ Transplantation',
+  'Transplant Oncology : An Envolving Concept',
   'Panel Discussion on Contentious Topics', 
   'HOTs in Liver Transplantation', 
   'Surgical Videos by Experts: How I Do It!'];
