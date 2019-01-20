@@ -19,4 +19,16 @@ page-program-glance{
             font-size: 16px;
         }
     }
+
+    @media(max-width:320px){
+        .slider{
+            margin-top: -70px;
+        }
+        table{
+            td{
+                padding: 1px;
+                font-size: 12px;
+            }
+        }
+    }
 }
