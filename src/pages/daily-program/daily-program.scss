@@ -6,17 +6,25 @@ page-daily-program{
 
     .slider{
         padding: 0;
-        margin-top:-75px;        
-    }
-
-    .sub-slider{
-
+        margin-top:0px;   
     }
 
     table{
         td{
-            padding: 1px;
-            font-size: 16px;
+            // padding: -10px;
+            font-size: 7px;
+        }
+    }
+
+    @media(max-width:320px){
+        .slider{
+            margin-top: -70px;
+        }
+        table{
+            td{
+                padding: 1px;
+                font-size: 12px;
+            }
         }
     }
 }
