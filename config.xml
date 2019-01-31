@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.ailbs" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.ailbs" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>AILBS International Conference 2019</name>
     <description>Officiail AILBS India Conference 2019 Mobile App</description>
     <author email="hello@delhinerds.com" href="http://ionicframework.com/">Ionic Framework Team</author>
@@ -91,4 +91,9 @@
     <plugin name="cordova-plugin-inappbrowser" spec="3.0.0" />
     <engine name="android" spec="7.1.4" />
     <engine name="browser" spec="5.0.4" />
+    <engine name="ios" spec="4.5.5" />
+    <plugin name="mobi.moica.whatsapp" spec="https://github.com/ranjitpandit/whatsapp-phonegap-plugin.git" />
+    <feature name="Whatsapp">
+        <param name="android-package" value="mobi.moica.whatsapp.Whatsapp" />
+    </feature>
 </widget>

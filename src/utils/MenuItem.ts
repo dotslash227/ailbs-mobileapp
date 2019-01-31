@@ -11,6 +11,8 @@ import { NewsPage } from "../pages/news/news";
 import { DownloadPage } from "../pages/download/download";
 import { ScientificCommitteePage } from "../pages/scientific-committee/scientific-committee";
 import { AgendaPage } from "../pages/agenda/agenda";
+import { SocialPage } from "../pages/social/social";
+import { AttendeesPage } from "../pages/attendees/attendees";
 
 export class MenuItem {
     parentDir = './assets/imgs/'
@@ -53,7 +55,7 @@ export class MenuItem {
         {
           icon: this.parentDir + 'docs-icon.png',
           label: 'Attendees',
-          page: ListPage
+          page: AttendeesPage
         },
         {
           icon: this.parentDir + 'map.png',
@@ -77,7 +79,7 @@ export class MenuItem {
         {
           icon: this.parentDir + 'Social-wall-icon.png',
           label: 'Social Wall',
-          page: ListPage
+          page: SocialPage
         },
         {
           icon: this.parentDir + 'login-icon.png',

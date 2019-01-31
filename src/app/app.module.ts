@@ -35,6 +35,8 @@ import { GoogleMaps } from "@ionic-native/google-maps";
 import { InAppBrowser } from "@ionic-native/in-app-browser";
 import { ProgramGlance } from '../pages/program-glance/program-glance';
 import { DailyProgram } from '../pages/daily-program/daily-program';
+import { SocialPage } from '../pages/social/social';
+import { AttendeesPage } from '../pages/attendees/attendees';
 
 @NgModule({
   declarations: [
@@ -60,7 +62,9 @@ import { DailyProgram } from '../pages/daily-program/daily-program';
     TabsPageAgenda,
     AgendaPage,
     ProgramGlance,
-    DailyProgram
+    DailyProgram,
+    SocialPage,
+    AttendeesPage
   ],
   imports: [
     BrowserModule,
@@ -92,7 +96,9 @@ import { DailyProgram } from '../pages/daily-program/daily-program';
     TabsPageAgenda,
     AgendaPage,
     ProgramGlance,
-    DailyProgram
+    DailyProgram,
+    SocialPage,
+    AttendeesPage
   ],
   providers: [
     StatusBar,
