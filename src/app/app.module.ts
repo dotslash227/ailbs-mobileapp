@@ -37,6 +37,7 @@ import { ProgramGlance } from '../pages/program-glance/program-glance';
 import { DailyProgram } from '../pages/daily-program/daily-program';
 import { SocialPage } from '../pages/social/social';
 import { AttendeesPage } from '../pages/attendees/attendees';
+import { FeedbackPage } from '../pages/feedback/feedback';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { AttendeesPage } from '../pages/attendees/attendees';
     ProgramGlance,
     DailyProgram,
     SocialPage,
-    AttendeesPage
+    AttendeesPage,
+    FeedbackPage
   ],
   imports: [
     BrowserModule,
@@ -98,7 +100,8 @@ import { AttendeesPage } from '../pages/attendees/attendees';
     ProgramGlance,
     DailyProgram,
     SocialPage,
-    AttendeesPage
+    AttendeesPage,
+    FeedbackPage
   ],
   providers: [
     StatusBar,

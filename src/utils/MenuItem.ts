@@ -13,6 +13,7 @@ import { ScientificCommitteePage } from "../pages/scientific-committee/scientifi
 import { AgendaPage } from "../pages/agenda/agenda";
 import { SocialPage } from "../pages/social/social";
 import { AttendeesPage } from "../pages/attendees/attendees";
+import { FeedbackPage } from "../pages/feedback/feedback";
 
 export class MenuItem {
     parentDir = './assets/imgs/'
@@ -69,7 +70,7 @@ export class MenuItem {
         },{
           icon: this.parentDir + 'feedback-icon.png',
           label: 'Feedback',
-          page: ListPage
+          page: FeedbackPage
         },
         {
           icon: this.parentDir + 'contact-icon.png',
