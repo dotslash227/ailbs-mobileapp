@@ -14,6 +14,7 @@ import { AgendaPage } from "../pages/agenda/agenda";
 import { SocialPage } from "../pages/social/social";
 import { AttendeesPage } from "../pages/attendees/attendees";
 import { FeedbackPage } from "../pages/feedback/feedback";
+import { SponsorsPage } from "../pages/sponsors/sponsors";
 
 export class MenuItem {
     parentDir = './assets/imgs/'
@@ -27,6 +28,11 @@ export class MenuItem {
           icon: this.parentDir + 'agenda-icon.png',
           label: 'Agenda',
           page: AgendaPage
+        },
+        {
+          icon: this.parentDir + 'sponsors-icon.png',
+          label: 'Sponsors',
+          page: SponsorsPage
         },
         {
           icon: this.parentDir + 'conf-highlights.png',
@@ -84,7 +90,7 @@ export class MenuItem {
         },
         {
           icon: this.parentDir + 'login-icon.png',
-          label: 'Login/Register',
+          label: 'Registration',
           page: 'RegisterPage'
         },
         {

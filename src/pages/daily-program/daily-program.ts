@@ -17,6 +17,10 @@ import { ApiProvider } from '../../providers/api/api';
 export class DailyProgram {
   items:any;
 
+  slideOpts = {
+    autoHeight: "1"
+  };
+
   constructor(public navCtrl: NavController, public navParams: NavParams,
     private apiProvider: ApiProvider) {
   }

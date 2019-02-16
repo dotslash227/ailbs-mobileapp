@@ -5,20 +5,54 @@ page-daily-program{
     }
 
     .slider{
-        padding: 0;
-        margin-top:0px;   
+        // margin-top: 5px;
+        min-height: 100%;
+        overflow: scroll;
+    }
+
+    .sub-slide{
+        margin-top: 10px;
+        padding: 5px;
+        overflow: scroll;
     }
 
     table{
         td{
             // padding: -10px;
+            margin-left: auto;
+            margin-right: auto;
             font-size: 7px;
         }
     }
+    .dp-img15{
+        margin-top: 250px;
+    }
+    .dp-img{
+        margin-top: 350px;
+    }
+    .dp-img17{
+        margin-top: 115px;
+    }
+    .dp-img172{
+        margin-top: 50px;
+    }
 
     @media(max-width:320px){
+        .dp-img15{
+            margin-top: 200px;
+        }
+        .dp-img{
+            margin-top: 300px;
+        }
+        .dp-img17{
+            margin-top: 105px;
+        }
+        .dp-img172{
+            margin-top: 50px;
+        }
         .slider{
-            margin-top: -70px;
+            overflow: scroll;
+            min-height: 100%;
         }
         table{
             td{
